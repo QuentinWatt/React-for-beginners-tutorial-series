@@ -1,6 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React JS for beginners
 
-## Available Scripts
+This is a repository for my [free YouTube course on React JS for beginners](https://www.youtube.com/watch?v=HDEVMozZhv8&list=PL41lfR-6DnOoTiHU4Ub6efP-p3xAq3eiV).
+
+### Support more free courses like this
+The courses I provide for free are competitive with many paid resources out there. If I can make $5000 through your contributions below, then making videos can become my full time job, and I can help thousands more students get real world development experience.
+
+[Become a Patron](https://www.patreon.com/QuentinWatt)
+[Join my YouTube channel](https://www.youtube.com/user/QuentinWatt/membership)
+
+## Scripts available in this React Project
 
 In the project directory, you can run:
 
