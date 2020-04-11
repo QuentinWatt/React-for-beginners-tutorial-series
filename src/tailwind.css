@@ -10924,6 +10924,25 @@ video {
   transition-duration: 1000ms;
 }
 
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 50px;
+  height: 50px; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+
+@keyframes spin {
+  0% { transform: rotate(0deg);
+  }
+
+  100% { transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
