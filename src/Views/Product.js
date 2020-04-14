@@ -49,7 +49,7 @@ function Product(){
     }
 
     return (
-        <div>
+        <div className="container mx-auto">
             {content}
         </div>
     )
