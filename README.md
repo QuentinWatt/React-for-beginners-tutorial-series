@@ -3,10 +3,23 @@
 This is a repository for my [free YouTube course on React JS for beginners](https://www.youtube.com/watch?v=HDEVMozZhv8&list=PL41lfR-6DnOoTiHU4Ub6efP-p3xAq3eiV).
 
 ### Support more free courses like this
-The courses I provide for free are competitive with many paid resources out there. If I can make $5000 through your contributions below, then making videos can become my full time job, and I can help thousands more students get real world development experience.
+The courses I provide for free are competitive with many paid resources out there. If I can make $5000 monthly through your contributions below, then making videos can become my full time job, and I can help thousands more students get real world development experience with free resources just like this.
 
-[Become a Patron](https://www.patreon.com/QuentinWatt)
-[Join my YouTube channel](https://www.youtube.com/user/QuentinWatt/membership)
+* [Become a Patron](https://www.patreon.com/QuentinWatt)
+
+* [Join my YouTube channel](https://www.youtube.com/user/QuentinWatt/membership)
+
+---
+
+## Installation
+
+1. Clone this project `git clone git@github.com:QuentinWatt/simple-react-boilerplate.git learn-react`
+2. CD into the directory `cd learn-react`
+3. Install all packages with `yarn` or `npm install`
+4. Start the server with `yarn start`
+5. Set up your own mock api using [these instructions](ApiSetup.md)
+
+---
 
 ## Scripts available in this React Project
 

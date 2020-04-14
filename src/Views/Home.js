@@ -28,7 +28,7 @@ function Home(){
     if(products.data){
         content = 
         products.data.map((product) => 
-            <div key={product.id}>
+            <div key={product.id} className="flex-no-shrink w-full md:w-1/4 md:px-3">
                 <ProductCard 
                     product={product}
                 />
@@ -37,11 +37,13 @@ function Home(){
     }
 
     return (
-        <div>
+        <div className="container mx-auto">
             <h1 className="font-bold text-2xl mb-3">
                 Best Sellers
             </h1>
-            {content}
+            <div className="md:flex flex-wrap md:-mx-3">
+                { content } 
+            </div>
         </div>
     )
 }
