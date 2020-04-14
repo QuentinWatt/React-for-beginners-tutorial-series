@@ -1,46 +1,26 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import Loader from '../Components/Loader'
+import { useAxiosGet } from '../Hooks/HttpRequests'
 
 function Product(){
     const { id } = useParams()
-    const url = `https://5e8dd95322d8cd0016a79b97.mockapi.io/api/v1/products/${id}`
-    const [product, setProduct] = useState({
-        loading: false,
-        data: null,
-        error: false
-    })
+    // Create your own Mock API: https://mockapi.io/
+    const url = `https://5e9623dc5b19f10016b5e31f.mockapi.io/api/v1/products/${id}`
+    
+    let product = useAxiosGet(url)
 
     let content = null
 
-    useEffect(() => {
-        setProduct({
-            loading: true,
-            data: null,
-            error: false
-        })
-        axios.get(url)
-            .then(response => {
-                setProduct({
-                    loading: false,
-                    data: response.data,
-                    error: false
-                })
-            })
-            .catch(() => {
-                setProduct({
-                    loading: false,
-                    data: null,
-                    error: true
-                })
-            })
-    }, [url])
-
     if(product.error){
-        content = <p>
-            There was an error please refresh or try again later.
-        </p>
+        content = <div>
+            <div className="bg-blue-300 mb-2 p-3">
+                If you see this error. Please remember to create your own <a href="https://mockapi.io/">mock API</a>.
+            </div>
+            <div className="bg-red-300 p-3">
+                There was an error please refresh or try again later.
+            </div>
+        </div>
     }
 
     if(product.loading){
