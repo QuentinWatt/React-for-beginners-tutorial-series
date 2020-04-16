@@ -22,13 +22,15 @@ function Home(){
     }
 
     if(products.loading){
-        content = <Loader></Loader>
+        content = <div className="w-full justify-center">
+            <Loader></Loader>
+        </div>
     }
 
     if(products.data){
         content = 
         products.data.map((product) => 
-            <div key={product.id} className="flex-no-shrink w-full md:w-1/4 md:px-3">
+            <div key={product.id} className="w-full md:w-1/4 md:px-4">
                 <ProductCard 
                     product={product}
                 />
@@ -41,8 +43,8 @@ function Home(){
             <h1 className="font-bold text-2xl mb-3">
                 Best Sellers
             </h1>
-            <div className="md:flex flex-wrap md:-mx-3">
-                { content } 
+            <div className="flex flex-wrap md:-mx-4">
+                {content}
             </div>
         </div>
     )
