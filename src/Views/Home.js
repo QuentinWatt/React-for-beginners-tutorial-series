@@ -43,7 +43,7 @@ function Home(){
             <h1 className="font-bold text-2xl mb-3">
                 Best Sellers
             </h1>
-            <div className="flex flex-wrap -mx-4">
+            <div className="flex flex-wrap md:-mx-4">
                 {content}
             </div>
         </div>
